@@ -48,7 +48,7 @@ create_kaltist_commander = {
         hide_age = yes
         event_leader = yes
         traits = {
-            trait = leader_trait_kaltsit_official
+            trait = leader_trait_kaltsit_commander
         }
         effect = {
             set_leader_flag = kaltsit

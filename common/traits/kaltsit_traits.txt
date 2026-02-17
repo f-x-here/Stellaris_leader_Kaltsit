@@ -10,13 +10,25 @@ leader_trait_kaltsit_official = {
         TIER = none
     }
 
-    fleet_modifier = {
-
+    planet_modifier = {
+        planet_stability_add = 40
+        planet_crime_add = -50
+        deposit_blockers_cost_mult = -0.4
+        planet_clear_blocker_speed_mult = 0.5
+        planet_decision_enact_speed_mult = 0.25
+        planet_colony_development_speed_mult = 0.15
+    }
+    sector_modifier = {
+        planet_stability_add = 20
+        deposit_blockers_cost_mult = -0.2
+        planet_clear_blocker_speed_mult = 0.25
+    }
+    councilor_modifier = {
+        country_unity_produces_mult = 0.10
+        council_agenda_progress_speed = 0.25
+        planet_jobs_unity_produces_mult = 0.05
     }
 
-    modifier = { }
-
-    custom_tooltip = leader_trait_kaltsit_official_toop
     initial = no
     randomized = no
 
@@ -41,11 +53,38 @@ leader_trait_kaltsit_commander = {
         TIER = none
     }
 
-    modifier = {
-
+    planet_modifier = {
+        planet_stability_add = 25
+        planet_crime_add = -50
+        armies_cost_mult = -0.3
+        job_soldier_add = 500
+        planet_army_build_speed_mult = 0.5
     }
 
-    custom_tooltip = leader_trait_kaltsit_commander_toop
+    councilor_modifier = {
+        army_damage_mult = 0.3
+        army_experience_gain_mult = 0.6
+        army_morale = 0.5
+        army_defense_damage_mult = 0.7
+        army_collateral_damage_mult = 0.8
+        ship_weapon_damage = 0.3
+        ship_damage_against_starbases_mult = 0.5
+    }
+
+    fleet_modifier = {
+        ship_shield_penetration_mult = 0.5
+        ship_armor_penetration_mult = 0.5
+        ship_weapon_damage = 0.6
+        ship_shield_regen_add_static = 1000
+        ship_armor_regen_add_static = 1000
+    }
+
+    army_modifier = {
+        army_health = 1
+        army_morale = 1
+        army_defense_damage_mult = 0.5
+    }
+
     initial = no
     randomized = no
 
@@ -68,13 +107,32 @@ leader_trait_kaltsit_scientist = {
         TIER = none
     }
 
-    modifier = {
+    planet_modifier = {
+        planet_stability_add = 25
+        planet_crime_add = -25
+        planet_biologists_society_research_produces_mult = 0.25
+        job_biologist_add = 500
+    }
 
+    councilor_modifier = {
+        all_technology_research_speed = 0.20
+        category_biology_research_speed_mult = 0.5
+        category_archaeostudies_research_speed_mult = 0.5
+    }
+
+    modifier = {
+        science_ship_survey_speed = 1.00
+        ship_anomaly_research_speed_mult = 1.00
+        ship_archaeological_site_excavation_speed_mult = 0.35
+        ship_speed_mult = 0.25
+        ship_evasion_add = 15
+        ship_sensor_range_add = 2
+        ship_hyperlane_range_add = 3
+        ship_windup_mult = -0.15
     }
 
     leader_class = { scientist }
 
-    custom_tooltip = leader_trait_kaltsit_scientist_toop
     initial = no
     randomized = no
     ai_weight = {
