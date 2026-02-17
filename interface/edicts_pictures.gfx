@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_edi_summon"
+		texturefile = "gfx/interface/icons/edicts/summon.dds"
+		alwaystransparent = yes
+	}
+}

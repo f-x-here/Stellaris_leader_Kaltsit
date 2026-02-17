@@ -1,0 +1,22 @@
+Call_Kaltsit = {
+    length = 1
+    icon = "GFX_edi_summon"
+    potential = {
+        is_ai = no
+        NOR = {
+            has_country_flag = ruled_by_kaltsit
+        }
+    }
+    allow = {
+    }
+    effect = {
+        hidden_effect = {
+            country_event = {
+                id = kaltsit.1
+            }
+        }
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

@@ -1,0 +1,83 @@
+leader_trait_kaltsit_official = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        leader_class = official
+        ICON = "GFX_leader_trait_Kaltsit_Official"
+        RARITY = paragon
+        CLASS = official
+        COUNCIL = yes
+        TIER = none
+    }
+
+    fleet_modifier = {
+
+    }
+
+    modifier = { }
+
+    custom_tooltip = leader_trait_kaltsit_official_toop
+    initial = no
+    randomized = no
+
+    leader_class = {
+        official
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+leader_trait_kaltsit_commander = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        leader_class = commander
+        ICON = "GFX_leader_trait_Kaltsit_Commander"
+        RARITY = paragon
+        CLASS = commander
+        COUNCIL = yes
+        TIER = none
+    }
+
+    modifier = {
+
+    }
+
+    custom_tooltip = leader_trait_kaltsit_commander_toop
+    initial = no
+    randomized = no
+
+    leader_class = { commander }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+leader_trait_kaltsit_scientist = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        leader_class = scientist
+        ICON = "GFX_leader_trait_Kaltsit_Scientist"
+        RARITY = paragon
+        CLASS = scientist
+        COUNCIL = yes
+        TIER = none
+    }
+
+    modifier = {
+
+    }
+
+    leader_class = { scientist }
+
+    custom_tooltip = leader_trait_kaltsit_scientist_toop
+    initial = no
+    randomized = no
+    ai_weight = {
+        weight = 0
+    }
+}

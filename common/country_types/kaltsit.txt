@@ -1,0 +1,37 @@
+kaltsit_type = {
+    show_in_contacts_list = yes
+    # 是否在通讯录中显示
+    minimalist_contacts_list_profile = yes
+    # 是否使用简化的通讯录简介
+    share_communications = no
+    # 共享通讯技术
+    default_ships = no
+    # 是否启用默认舰船
+    government = no
+    # 是否显示政府信息
+    ai = {
+        enabled = no
+    }
+    faction = {
+        hostile = no
+        # 是否敌对
+        needs_border_access = no
+        # 是否需要边境通行权限
+        generate_borders = no
+        # 是否生成边境
+        needs_colony = no
+        # 是否需要殖民地
+        auto_delete = no
+        # 是否自动删除
+    }
+    custom_diplomacy = yes
+    # 是否启用自定义外交规则
+    modules = {
+        # 模块配置
+        exclusive_diplomacy_module = {
+            # 专属外交模块
+            contact_rule = on_action_only
+            # 联系规则设为仅在事件触发时可用
+        }
+    }
+}

@@ -1,0 +1,5 @@
+portraits = {
+    kaltsit_official = {textureFile = gfx/models/portraits/Kaltsit_Official.png}
+    kaltsit_commander = {textureFile = gfx/models/portraits/Kaltsit_Commander.png}
+    kaltsit_scientist = {textureFile = gfx/models/portraits/Kaltsit_Scientist.png}
+}

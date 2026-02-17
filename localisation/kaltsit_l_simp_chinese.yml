@@ -1,0 +1,37 @@
+﻿l_simp_chinese:
+
+ # 一些基本描述
+ edict_Call_Kaltsit:"向凯尔希寻求帮助"
+ edict_Call_Kaltsit_desc:"看上去你遇到了难题，要向她寻求一些帮助吗？"
+ kaltsit_name:"凯尔希"
+ kaltsit_intro:"凯尔希的人生纬度无可测量。乌萨斯、维多利亚、萨尔贡，大地处处都有她的身影。"
+ kaltsit_official_intro:"凯尔希，目前在您的要求下协助管理帝国政务"
+ kaltsit_commander_intro:"凯尔希，目前在您的要求下协助处理防卫事宜"
+ kaltsit_scientist_intro:"凯尔希，目前在您的要求下协助推进科研任务"
+ kaltsit_revive_option:"欢迎回家"
+ call_kaltsit:"向凯尔希寻求帮助"
+
+ # 特质相关
+ leader_trait_kaltsit_official: "文明守望"
+ leader_trait_kaltsit_official_desc: "她曾观测，她曾斡旋，她曾目睹诸神并起。在这场几乎没有尽头的漫长旅程中，她始终在寻找文明延续的意义。她的意义。"
+ leader_trait_kaltsit_commander: "联军统帅"
+ leader_trait_kaltsit_commander_desc: "她曾谋划，她曾决断，她曾目睹血海尸山。在这场几乎没有尽头的漫长旅程中，她始终在寻找继续前行的理由。她的理由"
+ leader_trait_kaltsit_scientist: "时空漫步"
+ leader_trait_kaltsit_scientist_desc: "她曾聆听，她曾思考，她曾目睹诸国兴衰。在这场几乎没有尽头的漫长旅程中，她始终在寻找最初问题的答案。她的答案。"
+
+ # 帝国通讯
+ kaltsit.2.title:"通讯建立成功"
+ kaltsit.2.desc:"您想对她说什么?"
+ kaltsit.2.a:"没什么，只是想你了"
+ kaltsit.2.b:"我需要你协助我管理一下这片大地"
+ kaltsit.2.b.response:"大地的秩序不由人类裁定，但我会尽我所能"
+ kaltsit.2.c:"我认为现在的科研进展有些问题"
+ kaltsit.2.c.response:"或许科研部的新人还需要一点时间，我会帮助他们"
+ kaltsit.2.d:"我觉得外星的蛮夷太没有礼貌了"
+ kaltsit.2.d.response:"我会负责和他们交涉"
+
+
+
+# 领袖重生
+ kaltsit.3.title:"暂时离去"
+ kaltsit.3.desc:"凯尔希在执行任务中受到了严重创伤，但万幸我们带回了她，现在她需要在石棺中修养一段事件..."

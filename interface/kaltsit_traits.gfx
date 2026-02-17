@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_leader_trait_Kaltsit_Official"
+        texturefile = "gfx/interface/icons/traits/Kaltsit_Official.png"
+    }
+    spriteType = {
+        name = "GFX_leader_trait_Kaltsit_Scientist"
+        texturefile = "gfx/interface/icons/traits/Kaltsit_Scientist.png"
+    }
+    spriteType = {
+        name = "GFX_leader_trait_Kaltsit_Commander"
+        texturefile = "gfx/interface/icons/traits/Kaltsit_Commander.png"
+    }
+}

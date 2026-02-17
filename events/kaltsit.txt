@@ -1,0 +1,177 @@
+namespace = kaltsit
+
+country_event = {
+    id = kaltsit.1
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        set_country_flag = ruled_by_kaltsit
+        create_country = {
+            name = kaltsit_name
+            type = kaltsit_type
+            flag = {
+                icon =
+                {
+                    category = "corporate"
+                    file = "corporate_03.dds"
+                }
+                background =
+                {
+                    category = "backgrounds"
+                    file = "00_solid.dds"
+                }
+                colors =
+                {
+                    "light_green"
+                    "grey"
+                    "black"
+                    "null"
+                }
+            }
+        }
+        last_created_country = {
+            establish_communications_no_message = root
+            create_leader = {
+                class = official
+                species = root
+                name = kaltsit_name
+                custom_catch_phrase = kaltsit_intro
+                tier = leader_tier_legendary
+                immortal = yes #不朽
+                gender = female
+                species = owner_main_species
+                set_age = 1
+                hide_age = yes
+                event_leader = yes
+                traits = {
+                    trait = leader_trait_kaltsit_official
+                }
+                effect = {
+                    change_leader_portrait = kaltsit_official
+                }
+            }
+            set_leader = last_created_leader
+            save_global_event_target_as = kaltsit_empire
+        }
+    }
+}
+country_event = {
+    id = kaltsit.2
+    title = kaltsit.2.title
+    desc = kaltsit.2.desc
+    diplomatic = yes # 通讯事件
+    picture = GFX_evt_mysterious_signal
+    picture_event_data = {
+        portrait = from.leader
+        room = root
+    }
+    is_triggered_only = yes
+    trigger = {
+        has_country_flag = ruled_by_kaltsit
+        from = { is_country_type = kaltsit_type }
+        NOT = { has_active_event = { kaltsit.2 } }
+    }
+    option = {
+        name = kaltsit.2.a
+        default_hide_option = yes
+    }
+    option = {
+        name = kaltsit.2.b
+        response_text = kaltsit.2.b.response
+        trigger = {
+            NOR = {
+                any_owned_leader = { has_leader_flag = kaltsit_official }
+                has_modifier = kaltsit_revive_cool_down
+            }
+        }
+        hidden_effect = {
+            set_country_flag = change_profession_kaltsit
+            create_kaltist_official = yes
+            remove_country_flag = change_profession_kaltsit
+        }
+    }
+    option = {
+        name = kaltsit.2.c
+        response_text = kaltsit.2.c.response
+        trigger = {
+            NOR = {
+                any_owned_leader = { has_leader_flag = kaltsit_scientist }
+                has_modifier = kaltsit_revive_cool_down
+            }
+        }
+        hidden_effect = {
+            set_country_flag = change_profession_kaltsit
+            create_kaltist_scientist = yes
+            remove_country_flag = change_profession_kaltsit
+        }
+    }
+    option = {
+        name = kaltsit.2.d
+        response_text = kaltsit.2.d.response
+        trigger = {
+            NOR = {
+                any_owned_leader = { has_leader_flag = kaltsit_commander }
+                has_modifier = kaltsit_revive_cool_down
+            }
+        }
+        hidden_effect = {
+            set_country_flag = change_profession_kaltsit
+            create_kaltist_commander = yes
+            remove_country_flag = change_profession_kaltsit
+        }
+    }
+}
+
+country_event = {
+    id = kaltsit.3
+    title = kaltsit.3.title
+    desc = kaltsit.3.desc
+    # picture
+    is_triggered_only = yes
+    trigger = {
+        has_country_flag = ruled_by_kaltsit
+        NOR = { has_country_flag = change_profession_kaltsit }
+        from = {
+            OR = {
+                has_leader_flag = kaltsit
+            }
+        }
+    }
+    immediate = {
+        add_modifier = {
+            modifier = kaltsit_revive_cool_down
+            days = 30
+        }
+        hidden_effect = {
+            remove_country_flag = owend_kaltsit
+        }
+    }
+}
+
+country_event = {
+    id = kaltsit.4
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        has_country_flag = owend_kaltsit
+    }
+    immediate = {
+        every_owned_leader = {
+            if = {
+                limit = { has_leader_flag = kaltsit_official }
+                change_leader_portrait = kaltsit_official
+                remove_all_negative_traits = yes
+            }
+            if = {
+                limit = { has_leader_flag = kaltsit_scientist }
+                change_leader_portrait = kaltsit_scientist
+                remove_all_negative_traits = yes
+            }
+            if = {
+                limit = { has_leader_flag = kaltsit_commander }
+                change_leader_portrait = kaltsit_commander
+                remove_all_negative_traits = yes
+            }
+        }
+    }
+}

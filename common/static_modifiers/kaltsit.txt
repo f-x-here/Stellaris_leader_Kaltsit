@@ -1,0 +1,3 @@
+kaltsit_revive_cool_down = {
+
+}

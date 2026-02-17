@@ -1,0 +1,92 @@
+create_kaltist_official = {
+    every_owned_leader = {
+        limit = { has_leader_flag = kaltsit }
+        kill_leader = { show_notification = no }
+    }
+    set_country_flag = owned_kaltsit
+    create_leader = {
+        class = official
+        skill = 10
+        name = kaltsit_name
+        custom_catch_phrase = kaltsit_official_intro
+        tier = leader_tier_legendary
+        immortal = yes #不朽
+        gender = female
+        species = owner_main_species
+        set_age = 1
+        hide_age = yes
+        event_leader = yes
+        traits = {
+            trait = leader_trait_kaltsit_official
+        }
+        effect = {
+            set_leader_flag = kaltsit
+            set_leader_flag = kaltsit_official
+        }
+    }
+    last_created_leader = {
+        change_leader_portrait = kaltsit_official
+    }
+}
+
+create_kaltist_commander = {
+    every_owned_leader = {
+        limit = { has_leader_flag = kaltsit }
+        kill_leader = { show_notification = no }
+    }
+    set_country_flag = owned_kaltsit
+    create_leader = {
+        class = commander
+        skill = 10
+        name = kaltsit_name
+        custom_catch_phrase = kaltsit_commander_intro
+        tier = leader_tier_legendary
+        immortal = yes #不朽
+        gender = female
+        species = owner_main_species
+        set_age = 1
+        hide_age = yes
+        event_leader = yes
+        traits = {
+            trait = leader_trait_kaltsit_official
+        }
+        effect = {
+            set_leader_flag = kaltsit
+            set_leader_flag = kaltsit_commander
+        }
+    }
+    last_created_leader = {
+        change_leader_portrait = kaltsit_commander
+    }
+}
+
+create_kaltist_scientist = {
+    every_owned_leader = {
+        limit = { has_leader_flag = kaltsit }
+        kill_leader = { show_notification = no }
+    }
+    set_country_flag = owned_kaltsit
+    create_leader = {
+        class = scientist
+        skill = 10
+        name = kaltsit_name
+        custom_catch_phrase = kaltsit_scientist_intro
+        tier = leader_tier_legendary
+        immortal = yes #不朽
+        gender = female
+        species = owner_main_species
+        set_age = 1
+        hide_age = yes
+        event_leader = yes
+        traits = {
+            trait = leader_trait_kaltsit_scientist
+        }
+        effect = {
+            set_leader_flag = kaltsit
+            set_leader_flag = kaltsit_scientist
+        }
+    }
+    last_created_leader = {
+        change_leader_portrait = kaltsit_scientist
+    }
+}
